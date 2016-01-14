@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
     height: 100%;
-    background-color: #2C3E50;
+    background-color: #ECF0F1;
 }
 body {
     color: #fff;
@@ -56,8 +56,13 @@ body {
 /* Padding for spacing */
 .inner {
     padding: 30px;
+
 }
 
+.inner.cover{
+    color: #2980B9;
+    text-shadow: 0 1px 3px rgba(52,152,219, 0.25);
+}
 
 /*
  * Header
@@ -154,15 +159,21 @@ body {
     }
 }
 
+
 @media (min-width: 992px) {
+    @media (max-width: 1360px) {
+        .masthead-brand {
+            font-size: 1.25em;
+        }
+    }
     .masthead {
         position: fixed;
         left: 0;
         top: 0;
         bottom: 0;
-        width: 25%;
+        width: 20%;
         float: left;
-        background-color: #141C24;
+        background-color: #2C3E50 !important;
     }
     .masthead-nav > li {
         display: block;
@@ -184,11 +195,82 @@ body {
     }
     .mastfoot,
     .cover-container {
-        width: 75%;
+        width: 80%;
     }
     .inner.cover {
-        width: 75%;
-        margin-left: 25%;
+        width: 80%;
+        margin-left: 20%;
         margin-right: 0;
     }
+    .portfolio-wrapper {
+        margin-left: 20% !important;
+        width: 80%;
+        background-color: #3498DB;
+    }
+    .col-lg-4 {
+        padding-left: 0;
+    }
+    .portfolio-container > .row {
+        margin: 0;
+    }
+    .portfolio-item {
+        color: #fff !important;
+        text-shadow: 0 1px 3px rgba(0,0,0,.5) !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    .portfolio-item > .cover-heading {
+        margin-top: 35px;
+    }
+    #portfolio1 {
+        background-color: rgba(52,152,219, 0) !important;
+    }
+    #portfolio2 {
+        background-color: rgba(56,84,103, .25) !important;
+    }
+    #portfolio3 {
+        background-color: rgba(56,84,103, .5) !important;
+    }
+
+}
+
+/* Modified Bootstrap Buttons */
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background: #E74C3C;
+    color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.btn.sharp {
+    border-radius:0;
+}
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
 }
