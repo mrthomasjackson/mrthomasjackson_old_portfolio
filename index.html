@@ -20,7 +20,7 @@
     <![endif]-->
 </head>
 <body>
-<div class="site-wrapper">
+<div class="site-wrapper" id="home">
 
     <div class="site-wrapper-inner">
 
@@ -33,7 +33,7 @@
                         <ul class="nav masthead-nav nav-stacked">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#projects">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -42,7 +42,7 @@
             <div class="inner cover text-left">
                 <h1 class="cover-heading ">Hello, I'm Thomas.</h1>
                 <h2>I'm a web designer and developer.</h2>
-                <p class="lead">Here are a few  projects I have recently done. Please reach out if you
+                <p class="lead">Here are a few projects I have recently done. Please reach out if you
                     have any questions about myself or my work.</p>
                 <p class="lead">
                     <a href="#projects" class="btn btn-lg btn-danger sharp">View Projects</a>
@@ -58,62 +58,783 @@
 
     <div class="portfolio-container">
         <section class="row portfolio-section-item" id="portfolio1">
-            <div class="col-lg-4">
+            <div class="col-sm-4">
                 <a href="#" class="image"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png"
+                        src="resources/images/portfolio/thumbnails/seidatawarehouse.jpg"
                         class="img-responsive" alt="" data-position="center center"/></a>
             </div>
-            <div class="content col-lg-8">
+            <div class="content col-sm-8">
                 <div class="inner cover text-left portfolio-item">
 
-                    <h2 class="cover-heading">I'm a web designer and developer.</h2>
-                    <p class="lead">Here are a few of the projects I have been working on recently. Please reach out if you
-                        have any questions about myself or my work.</p>
+                    <h2 class="cover-heading">SimplyEyeglasses.com Data Warehouse</h2>
+                    <p class="lead">This data warehouse is a collection of all transactions, inventory, and competitor
+                        data stored in a relational database. A web dashboard was built for the executive decision
+                        makers to access HTML5 reports.</p>
                     <p class="lead">
-                        <a href="#projects" class="btn btn-lg btn-danger sharp">View Projects</a>
+                        <a href="#projects" class="btn btn-lg btn-danger sharp" data-toggle="modal"
+                           data-target="#seiDataWarehouse">View Project</a>
                     </p>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="seiDataWarehouse" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content sharp">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="">SimplyEyeglasses.com Data Warehouse</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>About</h3>
+                                    <hr>
+                                    <p class="lead"> This project allowed the company decision makers to gain insight
+                                        into the company's transactions. This insight allows to make clearer decisions
+                                        through reports and data visualization. This system also allowed the business to
+                                        isolate pain-points in pricing, and transactions.
+                                    </p>
+                                    <p class="lead">
+                                        The system was developed using MVC architecture through the PHP Laravel 5
+                                        framework. Raw data is imported from their point of sale system using XML files.
+                                        The XML files are parsed and entered into a MySQL database using PHP scripts.
+                                    </p>
+                                    <p class="lead">
+                                        MySQL queries are run to create HTML5 reports.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3>Technologies Used</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                <span class="label label-danger">PHP</span>
+                                                <span class="label label-danger">Laravel 5</span>
+                                                <span class="label label-danger">MySQL</span>
+                                                <span class="label label-danger">Unix</span>
+                                                <span class="label label-danger">Vagrant</span>
+                                                <span class="label label-danger">HTML</span>
+                                                <span class="label label-danger">CSS</span>
+                                                <span class="label label-danger">JavaScript</span>
+                                                <span class="label label-danger">jQuery</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Date</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                October 2015 (Ongoing development)
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                                    <a class="btn btn-primary disabled" disabled="disabled"><i
+                                            class="fa-2x fa fa-connectdevelop">&nbsp;&nbsp;</i>Private Project</a>
+                                    <a class="btn btn-purple disabled" disabled="disabled"><i
+                                            class="fa-2x fa fa-github">&nbsp;&nbsp;</i>Private Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="row portfolio-section-item" id="portfolio2">
-            <div class="col-lg-4">
+            <div class="col-sm-4">
                 <a href="#" class="image"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png"
+                        src="resources/images/portfolio/thumbnails/simplyeyeglasses.png"
                         class="img-responsive" alt="" data-position="top center"/></a>
             </div>
-            <div class="content col-lg-8">
+            <div class="content col-sm-8">
                 <div class="inner cover text-left portfolio-item">
 
-                    <h2 class="cover-heading">I'm a web designer and developer.</h2>
-                    <p class="lead">Here are a few of the projects I have been working on recently. Please reach out if you
-                        have any questions about myself or my work.</p>
+                    <h2 class="cover-heading">SimplyEyeglasses.com</h2>
+                    <p class="lead">A custom-built e-commerce website which sells designer eyeglasses, sunglasses, and
+                        prescription lenses. Active inventory of over 5,000 products with an average of 8-12 product
+                        combinations per product.</p>
                     <p class="lead">
-                        <a href="#projects" class="btn btn-lg btn-danger sharp">View Projects</a>
+                        <a href="#projects" class="btn btn-lg btn-danger sharp" data-toggle="modal"
+                           data-target="#seiwebsite">View Project</a>
                     </p>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="seiwebsite" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content sharp">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">SimplyEyeglasses.com E-Commerce Website</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>About</h3>
+                                    <hr>
+                                    <p class="lead"> SimplyEyeglasses.com is an e-commerce website that sells designer
+                                        eyewear. This project was focused on redesigning the front end software and
+                                        improve back end functions. Extensive use of the LAMP stack was used as the code
+                                        base is written entirely in plain PHP. A MySQL database stores inventory,
+                                        options, and other storage information.
+                                    </p>
+                                    <p class="lead">
+                                        Overall, the initial redesign took several months of development and 50,000+
+                                        lines of PHP, HTML, CSS, and JavaScript combined.
+                                    </p>
+                                    <p class="lead">
+                                        This project is considered active as I currently maintain the front end and back
+                                        end code base while releasing new features to the site.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3>Technologies Used</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                <span class="label label-danger">PHP</span>
+                                                <span class="label label-danger">MySQL</span>
+                                                <span class="label label-danger">Unix</span>
+                                                <span class="label label-danger">HTML</span>
+                                                <span class="label label-danger">CSS</span>
+                                                <span class="label label-danger">JavaScript</span>
+                                                <span class="label label-danger">jQuery</span>
+                                                <span class="label label-danger">Graphic Design</span>
+
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Date</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                March 2015 (Ongoing development)
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                                    <a class="btn btn-primary" target="_blank" href="https://www.simplyeyeglasses.com/"><i
+                                            class="fa-2x fa fa-connectdevelop">&nbsp;&nbsp;</i>Launch Project</a>
+                                    <a class="btn btn-purple disabled" disabled="disabled"><i
+                                            class="fa-2x fa fa-github">&nbsp;&nbsp;</i>Private Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="row portfolio-section-item" id="portfolio3">
-            <div class="col-lg-4">
+            <div class="col-sm-4">
                 <a href="#" class="image"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png"
+                        src="resources/images/portfolio/thumbnails/floridaliquorlicenses.png"
                         class="img-responsive" alt="" data-position="25% 25%"/></a>
             </div>
-            <div class="content col-lg-8">
+            <div class="content col-sm-8">
                 <div class="inner cover text-left portfolio-item">
 
-                    <h2 class="cover-heading">I'm a web designer and developer.</h2>
-                    <p class="lead">Here are a few of the projects I have been working on recently. Please reach out if you
-                        have any questions about myself or my work.</p>
+                    <h2 class="cover-heading">FloridaLiquorLicenses.com</h2>
+                    <p class="lead">A static HTML5 website built to generate leads for a business that brokers liquor
+                        licenses.</p>
                     <p class="lead">
-                        <a href="#projects" class="btn btn-lg btn-danger sharp">View Projects</a>
+                        <a href="#projects" class="btn btn-lg btn-danger sharp" data-toggle="modal"
+                           data-target="#FloridaLiquorLicenses">View Project</a>
                     </p>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="FloridaLiquorLicenses" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content sharp">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">FloridaLiquorLicenses.com</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>About</h3>
+                                    <hr>
+                                    <p class="lead"> This website was made to capture leads for Florida Business
+                                        Investments, Inc. The purpose of this business is to broker liquor licenses in
+                                        the state of Florida. The website makes use of my skills in HTML, CSS,
+                                        JavaScript, and jQuery. During this project, I worked closely with the President
+                                        of the business to develop a website to capture leads using a HTML form. The
+                                        form uses ASP.net to send the form information to the owners email address.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3>Technologies Used</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                <span class="label label-danger">.NET</span>
+                                                <span class="label label-danger">HTML</span>
+                                                <span class="label label-danger">CSS</span>
+                                                <span class="label label-danger">JavaScript</span>
+                                                <span class="label label-danger">jQuery</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Date</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                January 2015
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                                    <a class="btn btn-primary" href="http://floridaliquorlicenses.com/" target="_blank"><i
+                                            class="fa-2x fa fa-connectdevelop">&nbsp;&nbsp;</i>Launch Project</a>
+                                    <a class="btn btn-purple disabled" disabled="disabled"><i
+                                            class="fa-2x fa fa-github">&nbsp;&nbsp;</i>Private Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="row portfolio-section-item" id="portfolio4">
+            <div class="col-sm-4">
+                <a href="#" class="image"><img
+                        src="resources/images/portfolio/thumbnails/perceptioneyewear.png"
+                        class="img-responsive" alt="" data-position="25% 25%"/></a>
+            </div>
+            <div class="content col-sm-8">
+                <div class="inner cover text-left portfolio-item">
 
+                    <h2 class="cover-heading">PerceptionEyewear.com</h2>
+                    <p class="lead">A single HTML5 landing page to generate leads for a local Orlando, FL business which
+                        sells designer eyeglasses and sunglasses.</p>
+                    <p class="lead">
+                        <a href="#projects" class="btn btn-lg btn-danger sharp" data-toggle="modal"
+                           data-target="#PerceptionEyewear">View Project</a>
+                    </p>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="PerceptionEyewear" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content sharp">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">PerceptionEyewear.com</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>About</h3>
+                                    <hr>
+                                    <p class="lead"> The Perception Eyewear website was created to market a sunglass
+                                        store in Orlando, Florida. This website was created using basic web technologies
+                                        and methodologies. Site created using HTML, CSS, Javascript, and jQuery. The
+                                        site uses a responsive design for desktop, tablet, and other mobile devices.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3>Technologies Used</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                <span class="label label-danger">PHP</span>
+                                                <span class="label label-danger">HTML</span>
+                                                <span class="label label-danger">CSS</span>
+                                                <span class="label label-danger">JavaScript</span>
+                                                <span class="label label-danger">jQuery</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Date</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                December 2014
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                                    <a class="btn btn-primary" href="http://perceptioneyewear.com/" target="_blank"><i
+                                            class="fa-2x fa fa-connectdevelop">&nbsp;&nbsp;</i>Launch Project</a>
+                                    <a class="btn btn-purple"
+                                       href="https://github.com/mrthomasjackson/PerceptionEyewear"><i
+                                            class="fa-2x fa fa-github">&nbsp;&nbsp;</i>View Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row portfolio-section-item" id="portfolio5">
+            <div class="col-sm-4">
+                <a href="#" class="image"><img
+                        src="resources/images/portfolio/thumbnails/perceptionsun.png"
+                        class="img-responsive" alt="" data-position="25% 25%"/></a>
+            </div>
+            <div class="content col-sm-8">
+                <div class="inner cover text-left portfolio-item">
+
+                    <h2 class="cover-heading">PerceptionSun.com</h2>
+                    <p class="lead">Another site built for the sister store of Perception Eyewear. Perception Sun and
+                        Sport Eyewear sells designer eyeglasses and sunglasses geared towards the sport enthusiast.</p>
+                    <p class="lead">
+                        <a href="#projects" class="btn btn-lg btn-danger sharp" data-toggle="modal"
+                           data-target="#PerceptionSun">View Project</a>
+                    </p>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="PerceptionSun" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content sharp">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">PerceptionSun.com</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>About</h3>
+                                    <hr>
+                                    <p class="lead"> The Perception Sun & Sport Eyewear website was created to market a
+                                        sunglass store in Clermont, Florida. This website was created using basic web
+                                        technologies and methodologies. Site created using HTML, CSS, Javascript, and
+                                        jQuery. The site uses a responsive design for desktop, tablet, and other mobile
+                                        devices.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3>Technologies Used</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                <span class="label label-danger">PHP</span>
+                                                <span class="label label-danger">HTML</span>
+                                                <span class="label label-danger">CSS</span>
+                                                <span class="label label-danger">JavaScript</span>
+                                                <span class="label label-danger">jQuery</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Date</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                November 2015
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                                    <a class="btn btn-primary" href="http://perceptionsun.com/" target="_blank"><i
+                                            class="fa-2x fa fa-connectdevelop">&nbsp;&nbsp;</i>Launch Project</a>
+                                    <a class="btn btn-purple" href="https://github.com/mrthomasjackson/PerceptionSun"
+                                       target="_blank"><i
+                                            class="fa-2x fa fa-github">&nbsp;&nbsp;</i>View Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row portfolio-section-item" id="portfolio6">
+            <div class="col-sm-4">
+                <a href="#" class="image"><img
+                        src="resources/images/portfolio/thumbnails/contactsmanager.png"
+                        class="img-responsive" alt="" data-position="25% 25%"/></a>
+            </div>
+            <div class="content col-sm-8">
+                <div class="inner cover text-left portfolio-item">
+
+                    <h2 class="cover-heading">Contacts Manager App</h2>
+                    <p class="lead">A simple contacts manager app written in PHP. Project was developed as a class
+                        assignment while at Full Sail University</p>
+                    <p class="lead">
+                        <a href="#projects" class="btn btn-lg btn-danger sharp" data-toggle="modal"
+                           data-target="#ContactsManager">View Project</a>
+                    </p>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="ContactsManager" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content sharp">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Contacts Manager App</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>About</h3>
+                                    <hr>
+                                    <p class="lead"> A simple contacts manager app written in PHP. Project was developed
+                                        as a class
+                                        assignment while at Full Sail University
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3>Technologies Used</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                <span class="label label-danger">PHP</span>
+                                                <span class="label label-danger">MySQL</span>
+                                                <span class="label label-danger">Vagrant</span>
+                                                <span class="label label-danger">HTML</span>
+                                                <span class="label label-danger">CSS</span>
+                                                <span class="label label-danger">JavaScript</span>
+                                                <span class="label label-danger">jQuery</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Date</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                October 2015
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                                    <a class="btn btn-primary" href="http://contacts.mrthomasjackson.com/"
+                                       target="_blank"><i
+                                            class="fa-2x fa fa-connectdevelop">&nbsp;&nbsp;</i>Launch Project</a>
+                                    <a class="btn btn-purple"
+                                       href="https://github.com/mrthomasjackson/SSL/tree/master/PHP-Sandbox/Week4/UPLOAD/projectfiles"
+                                       target="_blank"><i
+                                            class="fa-2x fa fa-github">&nbsp;&nbsp;</i>View Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row portfolio-section-item" id="portfolio7">
+            <div class="col-sm-4">
+                <a href="#" class="image"><img
+                        src="resources/images/portfolio/thumbnails/richmediaoptimization.png"
+                        class="img-responsive" alt="" data-position="25% 25%"/></a>
+            </div>
+            <div class="content col-sm-8">
+                <div class="inner cover text-left portfolio-item">
+
+                    <h2 class="cover-heading">Rich Media Optimization - HTML5 Video</h2>
+                    <p class="lead">A simple HTML5 site designed for another Full Sail Class. This project focuses on
+                        video compression formats for the web including MP4, OGG, and WEBM.</p>
+                    <p class="lead">
+                        <a href="#projects" class="btn btn-lg btn-danger sharp" data-toggle="modal"
+                           data-target="#RichMediaOptimization">View Project</a>
+                    </p>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="RichMediaOptimization" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content sharp">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Rich Media Optimization - HTML5 Video</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>About</h3>
+                                    <hr>
+                                    <p class="lead">A simple HTML5 site designed for another Full Sail Class. This
+                                        project focuses on
+                                        video compression formats for the web including MP4, OGG, and WEBM
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3>Technologies Used</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                <span class="label label-danger">HTML</span>
+                                                <span class="label label-danger">CSS</span>
+                                                <span class="label label-danger">HTML5 Video</span>
+                                                <span class="label label-danger">JavaScript</span>
+                                                <span class="label label-danger">jQuery</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Date</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                December 2015
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                                    <a class="btn btn-primary"
+                                       href="http://mrthomasjackson.github.io/Rich-Media-Optimization/" target="_blank"><i
+                                            class="fa-2x fa fa-connectdevelop">&nbsp;&nbsp;</i>Launch Project</a>
+                                    <a class="btn btn-purple"
+                                       href="https://github.com/mrthomasjackson/Rich-Media-Optimization"
+                                       target="_blank"><i
+                                            class="fa-2x fa fa-github">&nbsp;&nbsp;</i>View Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row portfolio-section-item" id="portfolio8">
+            <div class="col-sm-4">
+                <a href="#" class="image"><img
+                        src="resources/images/portfolio/thumbnails/phplaravel.png"
+                        class="img-responsive" alt="" data-position="25% 25%"/></a>
+            </div>
+            <div class="content col-sm-8">
+                <div class="inner cover text-left portfolio-item">
+
+                    <h2 class="cover-heading">PHP Larvel 5.1 - MVC Sales Dashboard</h2>
+                    <p class="lead">A complex web app to help understand sales transactions using data visualization
+                        techniques. Dashboard was developed on a PHP MVC codebase (Laravel 5.1). This project lays the
+                        foundation for SimplyEyeglasses.com's data warehouse dashboard.</p>
+                    <p class="lead">
+                        <a href="#projects" class="btn btn-lg btn-danger sharp" data-toggle="modal"
+                           data-target="#MVCSalesDashboard">View Project</a>
+                    </p>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="MVCSalesDashboard" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content sharp">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">PHP Larvel 5.1 - MVC Sales Dashboard</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>About</h3>
+                                    <hr>
+                                    <p class="lead">A complex web app to help understand sales transactions using data
+                                        visualization
+                                        techniques. Dashboard was developed on a PHP MVC codebase (Laravel 5.1). This
+                                        project lays the
+                                        foundation for SimplyEyeglasses.com's data warehouse dashboard.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3>Technologies Used</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                <span class="label label-danger">PHP</span>
+                                                <span class="label label-danger">Laravel 5</span>
+                                                <span class="label label-danger">MySQL</span>
+                                                <span class="label label-danger">Unix</span>
+                                                <span class="label label-danger">Vagrant</span>
+                                                <span class="label label-danger">HTML</span>
+                                                <span class="label label-danger">CSS</span>
+                                                <span class="label label-danger">JavaScript</span>
+                                                <span class="label label-danger">jQuery</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Date</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                December 2015
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                                    <a class="btn btn-primary disabled" disabled="disabled"><i
+                                            class="fa-2x fa fa-connectdevelop">&nbsp;&nbsp;</i>Private Project</a>
+                                    <a class="btn btn-purple disabled" disabled="disabled"><i
+                                            class="fa-2x fa fa-github">&nbsp;&nbsp;</i>Private Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row portfolio-section-item" id="portfolio9">
+            <div class="col-sm-4">
+                <a href="#" class="image"><img
+                        src="resources/images/portfolio/thumbnails/sharepoint2010.jpg"
+                        class="img-responsive" alt="" data-position="25% 25%"/></a>
+            </div>
+            <div class="content col-sm-8">
+                <div class="inner cover text-left portfolio-item">
+
+                    <h2 class="cover-heading">Ruth's Chris Steakhouse - Corp Intranet</h2>
+                    <p class="lead">As a team member in the IT department, I was tasked with the re-design of the
+                        corporate intranet website. The site was developed on a Microsoft IIS server. The new site was
+                        designed within the Microsoft SharePoint 2010 suite.</p>
+                    <p class="lead">
+                        <a href="#projects" class="btn btn-lg btn-danger sharp" data-toggle="modal"
+                           data-target="#RHGICorpIntranet">View Project</a>
+                    </p>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="RHGICorpIntranet" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content sharp">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Ruth's Chris Steakhouse - Corp Intranet</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>About</h3>
+                                    <hr>
+                                    <p class="lead">As a team member in the IT department, I was tasked with the
+                                        re-design of the
+                                        corporate intranet website. The site was developed on a Microsoft IIS server.
+                                        The new site was
+                                        designed within the Microsoft SharePoint 2010 suite.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3>Technologies Used</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                <span class="label label-danger">Microsoft IIS</span>
+                                                <span class="label label-danger">Microsoft SharePoint</span>
+                                                <span class="label label-danger">Microsoft Sequel Server</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Date</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                October 2015
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                                    <a class="btn btn-primary disabled" disabled="disabled"><i
+                                            class="fa-2x fa fa-connectdevelop">&nbsp;&nbsp;</i>Private Project</a>
+                                    <a class="btn btn-purple disabled" disabled="disabled"><i
+                                            class="fa-2x fa fa-github">&nbsp;&nbsp;</i>Private Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row portfolio-section-item" id="portfolio10">
+            <div class="col-sm-4">
+                <a href="#" class="image"><img
+                        src="resources/images/portfolio/thumbnails/angular.png"
+                        class="img-responsive" alt="" data-position="25% 25%"/></a>
+            </div>
+            <div class="content col-sm-8">
+                <div class="inner cover text-left portfolio-item">
+
+                    <h2 class="cover-heading">Angular Employee Directory</h2>
+                    <p class="lead">The project was developed for yet another Full Sail class. The web app uses the
+                        Angular framework and utilizes local storage in the browser.</p>
+                    <p class="lead">
+                        <a href="#projects" class="btn btn-lg btn-danger sharp" data-toggle="modal"
+                           data-target="#AngularEmployeeDirectory">View Project</a>
+                    </p>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="AngularEmployeeDirectory" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content sharp">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">SimplyEyeglasses.com Data Warehouse</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>About</h3>
+                                    <hr>
+                                    <p class="lead">The project was developed for yet another Full Sail class. The web
+                                        app uses the Angular framework and utilizes local storage in the browser.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3>Technologies Used</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                <span class="label label-danger">Angular</span>
+                                                <span class="label label-danger">HTML</span>
+                                                <span class="label label-danger">CSS</span>
+                                                <span class="label label-danger">JavaScript</span>
+                                                <span class="label label-danger">jQuery</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Date</h3>
+                                            <hr>
+                                            <p class="lead">
+                                                June 2015
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                                    <a class="btn btn-primary disabled" disabled="disabled"><i
+                                            class="fa-2x fa fa-connectdevelop">&nbsp;&nbsp;</i>Private Project</a>
+                                    <a class="btn btn-purple disabled" disabled="disabled"><i
+                                            class="fa-2x fa fa-github">&nbsp;&nbsp;</i>Private Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
+</div>
+<div class="site-wrapper contact-wrapper" id="contact">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="contact-container">
+                <div class="inner cover text-left">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <ul class="list-group sharp">
+                                <li class="list-group-item active">
+                                    <h4>Contact Me</h4>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-2x fa-envelope-o"> </i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:mrthomasjackson@icloud.com">mrthomasjackson@icloud.com</a>
+                              </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-2x fa-phone"> </i>&nbsp;&nbsp;&nbsp;&nbsp;<span>+1 407 450 6966</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-2x fa-connectdevelop"> </i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://mrthomasjackson.com">mrthomasjackson.com</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-2x fa-github"> </i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/mrthomasjackson" target="_blank">@MrThomasJackson's Github Account</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-2x fa-linkedin-square"> </i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/thomas-jackson-5ab99563" target="_blank">LinkedIn Profile</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
