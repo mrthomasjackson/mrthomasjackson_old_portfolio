@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08dbf9b8-97bb-4697-be3d-7ada73b4f5ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="mrthomasjackson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +26,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.9">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.9172662">
+                <state vertical-scroll-proportion="-42.5">
                   <caret line="739" column="18" selection-start-line="739" selection-start-column="18" selection-end-line="739" selection-end-column="18" />
                   <folding>
                     <element signature="n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -47,6 +47,16 @@
                     <element signature="n#section#8;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#section#9;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.41929665">
+                  <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -101,6 +111,7 @@
         <option value="$PROJECT_DIR$/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/custom/css/cover.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -632,12 +643,12 @@
       <workItem from="1452815249931" duration="816000" />
       <workItem from="1452835527087" duration="2882000" />
       <workItem from="1452869600808" duration="12000" />
-      <workItem from="1452875631203" duration="3324000" />
+      <workItem from="1452875631203" duration="4251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27432000" />
+    <option name="totallyTimeSpent" value="28359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-281" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -873,7 +884,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9172662">
+        <state vertical-scroll-proportion="-42.5">
           <caret line="739" column="18" selection-start-line="739" selection-start-column="18" selection-end-line="739" selection-end-column="18" />
           <folding>
             <element signature="n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -891,6 +902,14 @@
             <element signature="n#section#8;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#9;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41929665">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
