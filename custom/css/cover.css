@@ -52,7 +52,7 @@ body {
 }
 .site-wrapper-inner {
     display: table-cell;
-    vertical-align: top;
+    vertical-align: middle;
 }
 .cover-container {
     margin-right: auto;
@@ -105,7 +105,8 @@ body {
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
     color: #ECF0F1;
-    border-bottom-color: #ECF0F1;
+    border-bottom-color: #2C3E50;
+    border-bottom: solid;
 }
 
 @media (min-width: 768px) {
@@ -150,6 +151,11 @@ body {
     .masthead {
         position: fixed;
         top: 0;
+        background-color: #ECF0F1;
+        z-index: 999;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
     }
     .mastfoot {
         position: fixed;
@@ -182,6 +188,9 @@ body {
         width: 20%;
         float: left;
         background-color: #2C3E50 !important;
+        -webkit-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.5);
+        box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.5);
     }
     .masthead-nav > li {
         display: block;
@@ -238,7 +247,15 @@ body {
 
 }
 
+
+
 /* Portfolio backgrounds */
+.portfolio-wrapper {
+    background-color: #3498DB;
+}
+.portfolio-item > * {
+    color: #fff;
+}
 #portfolio1 {
     background-color: rgba(52,152,219, 0) !important;
 }
@@ -268,9 +285,9 @@ body {
 }
 #portfolio10 {
     background-color: rgba(56,84,103, 1) !important;
-    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
 }
 
 /* Modified Bootstrap Buttons */
@@ -370,9 +387,9 @@ body {
 
 .list-group {
     color: #000;
-    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
 }
 
 #home {

@@ -31,22 +31,28 @@
                     <h3 class="masthead-brand">@MrThomasJackson</h3>
                     <nav>
                         <ul class="nav masthead-nav nav-stacked">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li id="homenav"><a href="#">Home</a></li>
+                            <li id="portfolionav"><a href="#projects">Projects</a></li>
+                            <li id="contactnav"><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
 
             <div class="inner cover text-left">
-                <h1 class="cover-heading ">Hello, I'm Thomas.</h1>
-                <h2>I'm a web designer and developer.</h2>
-                <p class="lead">Here are a few projects I have recently done. Please reach out if you
-                    have any questions about myself or my work.</p>
-                <p class="lead">
-                    <a href="#projects" class="btn btn-lg btn-danger sharp">View Projects</a>
-                </p>
+                <div class="col-sm-3">
+                    <img class="img-circle img-responsive" src="resources/images/home/me.jpg">
+                </div>
+                <div class="col-sm-9" id="home-end">
+                    <h1 class="cover-heading ">Hello, I'm Thomas.</h1>
+                    <h2>I'm a web designer and developer.</h2>
+                    <p class="lead">Here are a few projects I have recently done. Please reach out if you
+                        have any questions about myself or my work.</p>
+                    <p class="lead">
+                        <a href="#projects" class="btn btn-lg btn-danger sharp">View Projects</a>
+                    </p>
+                </div>
+
             </div>
 
         </div>
@@ -840,5 +846,66 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/jquery-smooth-scroll/src/jquery.smooth-scroll.js"></script>
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('a').smoothScroll(); // Smooth scrolling
+
+        var home = new Waypoint({
+            element: document.getElementById('home'),
+            handler: function(direction) {
+                $('#homenav').addClass('active');
+                $('#portfolionav').removeClass('active');
+                $('#contactnav').removeClass('active');
+                console.log('home active')
+            }
+        });
+
+        var homeEnd = new Waypoint({
+            element: document.getElementById('home-end'),
+            handler: function(direction) {
+                $('#homenav').addClass('active');
+                $('#portfolionav').removeClass('active');
+                $('#contactnav').removeClass('active');
+                console.log('home active')
+            }
+        });
+
+        var portfolio = new Waypoint({
+            element: document.getElementById('projects'),
+            handler: function(direction) {
+
+                $('#portfolionav').addClass('active');
+                $('#homenav').removeClass('active');
+                $('#contactnav').removeClass('active');
+                console.log('portfolio active')
+            }
+        });
+
+        var portfolioEnd = new Waypoint({
+            element: document.getElementById('portfolio10'),
+            handler: function(direction) {
+
+                $('#portfolionav').addClass('active');
+                $('#homenav').removeClass('active');
+                $('#contactnav').removeClass('active');
+                console.log('portfolio active')
+            }
+        });
+
+        var contact = new Waypoint({
+            element: document.getElementById('contact'),
+            handler: function(direction) {
+
+                $('#contactnav').addClass('active');
+                $('#portfolionav').removeClass('active');
+                $('#homenav').removeClass('active');
+                console.log('contact active')
+            }
+        })
+
+    })
+</script>
 </body>
 </html>
