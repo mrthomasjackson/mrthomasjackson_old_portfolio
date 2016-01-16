@@ -18,15 +18,15 @@
 
 #### Deployment Plan:
 -----
-  1. Merge Dev Branch into Master
-   * $ git checkout master - Switches to the local master branch
-   * $ git pull dev master - Resolve any conflicts
-    * $ git add -A
-    * $ git commit -am ‘Relevant detailed commit message.’
-    * $ git pull github master
-   * $ git merge newFeatureName
-  2. Test - Determine if merge was successful
-   $ git push dev master - Only when setermined a stable release
-  3. Tag
-    * $ git tag -a vX.X.X -m ‘Release Code or Feature Name ’
-    * $ git push github --tags
+  1. Merge dev into master
+   * $ git checkout master
+   * $ git merge dev master
+   * $ git push
+  2. Push Master to Staging Server
+   * $ git push staging
+   * Test in stage enviornment.
+   * $ git tag -a vX.X.X -m ‘Release Code or Feature Name ’
+  3. Push Master to Production Server
+   * $ git push production
+   * $ git push github --tags
+   * Test in production enviornment.
